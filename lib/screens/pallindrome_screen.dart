@@ -55,7 +55,15 @@ class _PalindromeNumberState extends State<PalindromeNumber> {
                 decoration: const InputDecoration(
                   labelText: "Enter a number",
                   hintText: "Eg: 121",
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.red),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.green),
+                  ),
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {

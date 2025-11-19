@@ -24,7 +24,6 @@ class _ArmstrongNumberState extends State<ArmstrongNumber> {
   }
 
   bool isArmstrong(int n) {
-    // Armstrong (narcissistic) number logic: sum of each digit^numDigits equals the number
     final digits = n.abs().toString().split('').map(int.parse).toList();
     final power = digits.length;
     final sum = digits.map((d) => powInt(d, power)).reduce((a, b) => a + b);
@@ -32,7 +31,6 @@ class _ArmstrongNumberState extends State<ArmstrongNumber> {
   }
 
   int powInt(int base, int exp) {
-    // small integer power without using dart:math's pow which returns num
     int res = 1;
     for (int i = 0; i < exp; i++) {
       res *= base;

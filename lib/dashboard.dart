@@ -1,6 +1,8 @@
 import 'package:batch_35d_classwork/screens/armstrong_screen.dart';
 import 'package:batch_35d_classwork/screens/arthimatic_screen.dart';
+import 'package:batch_35d_classwork/screens/flutter_layout_screen.dart';
 import 'package:batch_35d_classwork/screens/pallindrome_screen.dart';
+import 'package:batch_35d_classwork/screens/rich_text_screen.dart';
 import 'package:batch_35d_classwork/screens/simple_interest.dart';
 import 'package:flutter/material.dart';
 
@@ -63,6 +65,17 @@ class _DashboardState extends State<Dashboard> {
                 );
               },
               child: const Text('Pallindrome'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const FlutterLayoutScreen(),
+                  ),
+                );
+              },
+              child: const Text('Layout'),
             ),
           ],
         ),

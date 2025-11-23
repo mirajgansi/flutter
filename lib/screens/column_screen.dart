@@ -10,10 +10,34 @@ class ColumnScreen extends StatelessWidget {
         title: const Text("Simple Intrest"),
         backgroundColor: Colors.green,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [Text('top'), Text('Middle'), Text('bottom')],
+      body: Container(
+        width: double.infinity,
+        color: Colors.yellow,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            ElevatedButton(onPressed: () {}, child: const Text('Button 1')),
+            TextButton(onPressed: () {}, child: const Text('Button 2')),
+            OutlinedButton(onPressed: () {}, child: const Text('Button 3')),
+
+            // Icon(Icons.star, size: 50),
+            // Icon(Icons.star, size: 50),
+            // Column(
+            //   children: [
+            //     Icon(Icons.star, size: 50),
+            //     Icon(Icons.star, size: 50),
+            //     Icon(Icons.star, size: 50),
+            //   ],
+            // ),
+            // Column(
+            //   children: [
+            //     Icon(Icons.star, size: 50),
+            //     Icon(Icons.star, size: 50),
+            //   ],
+            // ),
+          ],
+        ),
       ),
     );
   }

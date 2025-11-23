@@ -61,10 +61,12 @@ class _ArmstrongNumberState extends State<ArmstrongNumber> {
                   border: OutlineInputBorder(),
                 ),
                 validator: (value) {
-                  if (value == null || value.isEmpty)
+                  if (value == null || value.isEmpty) {
                     return 'please enter a number';
-                  if (int.tryParse(value) == null)
+                  }
+                  if (int.tryParse(value) == null) {
                     return 'please enter a valid integer';
+                  }
                   return null;
                 },
               ),

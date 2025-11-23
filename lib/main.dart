@@ -1,4 +1,5 @@
 import 'package:batch_35d_classwork/dashboard.dart';
+import 'package:batch_35d_classwork/screens/flexible_expanded_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const Dashboard(),
+      home: const FlexibleExpandedScreen(),
     );
   }
 }
